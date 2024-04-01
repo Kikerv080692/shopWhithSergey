@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //background: #646cff;
+  padding: 20px 40px;
+  border-bottom:1px solid transparent;
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+}
+
+.header.light {
+  background: #646cff;
+  border-bottom:1px solid white;
+}
+
+.header.dark {
+  background: #333333;
+  border-bottom:1px solid white;
+}
+

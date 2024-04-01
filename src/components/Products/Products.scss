@@ -1,0 +1,135 @@
+.input__wrapper {
+  max-width: 50px;
+  input {
+    max-width: inherit;
+  }
+}
+#light {
+  background: blue;
+}
+#dark {
+  background: black;
+  color: white;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  @media (min-width: 800px) and (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media  (max-width: 799.99px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+}
+.btn__load-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+
+  .btn__load {
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    border-radius: 4px;
+    border: none;
+
+  }
+}
+
+
+
+
+.product {
+  padding: 20px ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  &__image {
+    min-height: 286px;
+    max-height: 287px;
+    max-width: 200px;
+    align-self: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__category:first-letter {
+      text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+
+  &__price {
+    font-size: 16px;
+
+    &-expensive {
+      color: green;
+    }
+    &-cheep {
+      color: red;
+    }
+
+  }
+
+  &__btn-view {
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 4px;
+    align-self: flex-start;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+    border: 1px solid green;
+  }
+  &__btn-basket {
+    background: green;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+    border: 1px solid green;
+    align-self: flex-end;
+  }
+
+  &__btn-view:hover {
+    background: transparent ;
+    color: green;
+    border: 1px solid green;
+  }
+
+
+
+  }
+.product.light {
+
+}
+
+.product.dark {
+
+  box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+}
+

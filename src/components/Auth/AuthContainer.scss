@@ -1,0 +1,76 @@
+.auth {
+  height: calc(100vh - 114px);
+  display: flex;
+
+  &__preview {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+    max-width: 500px;
+      border-radius: 10px;
+    }
+  }
+
+  &__content {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.login, .register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .login__form, .register__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form__control {
+    position: relative;
+
+    .login__input, .register__input {
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: 1px solid #333;
+      color: #333;
+      width: 100%;
+    }
+
+  }
+  .login__btn:disabled {
+    background: black;
+  }
+  .login__btn{
+    background: green;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .text__error {
+    color: red;
+    font-size: 12px;
+
+  }
+
+  .login__info {
+    text-align: center;
+  }
+
+  .login__info span {
+    padding-right: 10px;
+  }
+}

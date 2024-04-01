@@ -1,0 +1,14 @@
+.search-wrapper {
+
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid blue;
+
+  &:focus {
+    //border: none;
+    outline: none;
+  }
+}
